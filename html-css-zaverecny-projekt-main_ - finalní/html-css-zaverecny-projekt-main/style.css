@@ -1,0 +1,428 @@
+html { box-sizing: border-box; }
+*, ::before, ::after { box-sizing: inherit; }
+
+:root {
+  --color-primary: #ec5600;
+  --color-primary-dark: #db5000;
+  --color-secondary: #4d592b;
+  --color-secondary-dark: #414536;
+  --color-secondary-light: #adb29e;
+  --color-secondary-bright: #e2e4d9;
+  --color-section-bg: #f5f5f1;
+  --color-text: #172126;
+  --color-footer-bg: #2c2f24;
+
+  --radius: 12px;
+  --font-family-h1ah2-nadpisy: "Playfair Display", serif;
+  --font-family-obsah: "DM Sans", sans-serif;
+}
+
+body {
+  font-family: var(--font-family-obsah);
+  font-size: 1.125;
+  line-height: 1.4;
+  color: var(--color-text);
+  margin: 0;
+}
+
+h1,
+h2 {
+  font-family: var(--font-family-h1ah2-nadpisy);
+}
+
+h1 {
+  font-size: 3.5rem;
+  font-weight: 400;
+  line-height: 1;
+}
+
+h2 {
+  font-size: 2.5rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.sekce__banner,
+.sekce__listek,
+.sekce__rozvoz,
+.footer {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.container {
+  max-width: 540px;
+  margin: 0 auto;
+  padding-top:20px;
+  padding-bottom: 20px;
+}
+
+.button {
+  display: inline-block;
+  padding: 15px 30px;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  color: white;
+  background-color: var(--color-primary);
+  border-radius: 100vw;
+}
+
+.button:hover {
+  background-color: var(--color-primary-dark);
+  text-decoration: none;
+}
+
+.header {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  max-width: 540px;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+}
+
+.logo img {
+  height: 35px;
+}
+
+.nav {
+  display: flex;
+  margin-top: 20px;
+}
+
+.nav__link {
+  display: inline-block;
+  padding: 10px 15px;
+  font-size: 1.125rem;
+  font-weight: 500;
+  text-decoration: none;
+  color: var(--color-secondary-dark);
+  border-radius: 100vw;
+  white-space: nowrap;
+}
+
+.nav__link:hover {
+  background-color: var(--color-secondary-bright);
+  text-decoration: none;
+}
+
+
+.sekce__banner {
+  background-image: url(images/hero.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  margin-bottom: 0;
+}
+
+.hero__title {
+  margin-bottom: 0;
+  white-space: nowrap;
+}
+
+.hero__text {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.nadpis__listek {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.karty {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  gap: 30px;
+}
+
+.karta {
+  border: 1px solid var(--color-secondary-bright);
+  border-radius: var(--radius);
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  padding: 30px 20px;
+}
+
+.ikona {
+  height: 40px;
+  width: 40px;
+  margin: 0 auto;
+}
+
+.nadpis2 {
+  color: var(--color-secondary);
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.popis {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+a {
+  color: var(--color-primary);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.sekce__rozvoz {
+  background-color: var(--color-section-bg);
+}
+
+.rozvoz__box {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.foto__rozvoz {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.rozvoz__popis {
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.list__popis {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-size: 1.125rem;
+  font-weight: 500;
+  color: var(--color-secondary-dark);
+  margin-bottom: 10px;
+}
+
+.rozvoz__text {
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+.footer {
+  background-color: var(--color-footer-bg);
+  color: var(--color-secondary-light);
+  padding-top: 30px;
+}
+
+.odkaz {
+  color: var(--color-secondary-bright);
+  text-decoration: none;
+}
+
+.logo__paticka {
+  height: 40px;
+}
+
+.adresa {
+  margin-top: 20px;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  padding: 20px 0 20px 0;
+}
+
+.copy {
+  display: flex;
+  flex-direction: row;
+}
+
+
+@media (min-width: 768px) {
+  
+  h1 {
+    font-size: 4rem;
+  }
+
+  h2 {
+    font-size: 3rem;
+  }
+
+  .sekce__listek,
+  .sekce__banner,
+  .sekce__rozvoz,
+  .footer {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+ 
+  .container {
+    max-width: 1100px;
+  }
+
+  .header {
+    max-width: 1100px;
+  }
+
+  .button {
+    padding: 20px 40px 20px 40px;
+    font-size: 1.125rem;
+  }
+
+  .nav__link {
+    padding-top: 10px 20px 10px 20px;
+  }
+
+  .header {
+    flex-direction: row;
+    justify-content: space-between;
+    margin-inline: 20px;
+  }
+
+  
+  .sekce__banner {
+    padding-bottom: 120px;
+    padding-top: 120px;
+  }
+
+  .hero__text {
+    font-size: 1.25rem;
+  }
+
+  .karty {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .karta{
+    width: calc((100% - 60px) / 2);
+  }
+
+  .rozvoz__box {
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+    padding-inline: 20px;
+  }
+  
+  .foto__rozvoz1 {
+    display: flex;
+  }
+
+  .rozvoz__popis {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nadpis__rozvoz {
+    margin-top: 0;
+  }
+
+  .list {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .foto__rozvoz1,
+  .rozvoz__popis {
+    width: 50%;
+    margin-bottom: 0;
+  }
+
+  .paticka {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-inline: 20px;
+  }
+
+  .menu {
+    margin-bottom: 10px;
+  }
+
+  .copy {
+    margin-top: 0;
+  }
+
+  .adresa {
+    margin-top: 10px;
+  }
+
+  .logo__paticka {
+    margin-bottom: 0;
+  }
+
+}
+
+
+@media (min-width: 1100px) {
+
+  h1 {
+    font-size: 5rem;
+  }
+
+  h2 {
+    font-size: 3.5rem;
+  }
+
+  .logo img {
+    height: 45px;
+  }
+
+  .nav__link {
+    padding: 15px 30px 15px 30px;
+  }
+
+  .sekce__banner {
+    padding-bottom: 150px;
+    padding-top: 150px;
+  }
+
+  .karty{
+    flex-wrap: nowrap;
+    margin-inline: 20px;
+  }
+
+  .karta {
+    width: calc((100% - 40px) / 4);
+  }
+
+  .popis__rozvoz {
+    padding-top: 20px;
+    padding-bottom:0px;
+  }
+}
